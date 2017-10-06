@@ -1,0 +1,23 @@
+module adder_checker (
+    input clk,  // clock
+    input rst,  // reset
+    input a,
+    input b,
+    input cin,
+    input sum,
+    input carry,
+    output out //output 1 if error, output 0 if correct
+  ) {
+  
+  dff adder[2](.clk(clk),.rst(rst));
+
+  always {
+    adder.d =a + b + cin;
+    if (adder.q[0] != sum || adder.q[1] != carry) {
+      out = 1;  
+    }
+    else {
+      out = 0;
+    }  
+  }
+}

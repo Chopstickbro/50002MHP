@@ -1,0 +1,17 @@
+module auto_check (
+    input toggle,  // toggle between states
+    input rst,  // reset
+    output a,
+    output b,
+    output c
+  ) {
+
+  dff output_counter[3](.clk(toggle),.rst(rst));
+  
+  always {
+    a = output_counter.q[0];
+    b = output_counter.q[1];
+    c = output_counter.q[2];
+    output_counter.d = output_counter.q + 1;
+  }
+}

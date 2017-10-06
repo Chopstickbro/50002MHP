@@ -1,0 +1,16 @@
+module clock (
+    //clock alternates output level every N seconds
+    
+    input clk,  // clock
+    input rst,  // reset
+    output out
+  ) {
+  
+  const N = 26;
+  dff counter[N](.rst(rst), .clk(clk));
+  
+  always {
+    out = counter.q[N-1];
+    counter.d = counter.q + 1;
+  }
+}

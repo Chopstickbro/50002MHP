@@ -1,0 +1,534 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: mojo_top_0.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mojo_top_0.prj"
+
+---- Target Parameters
+Target Device                      : xc6slx9tqg144-2
+Output File Name                   : "mojo_top_0.ngc"
+
+---- Source Options
+Top Module Name                    : mojo_top_0
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Netlist Hierarchy                  : rebuilt
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Parsing module <reset_conditioner_1>.
+Analyzing Verilog file "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/Clock_2.v" into library work
+Parsing module <clock_2>.
+Analyzing Verilog file "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/auto_check_4.v" into library work
+Parsing module <auto_check_4>.
+Analyzing Verilog file "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/adder_checker_3.v" into library work
+Parsing module <adder_checker_3>.
+Analyzing Verilog file "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <reset_conditioner_1>.
+
+Elaborating module <clock_2>.
+
+Elaborating module <adder_checker_3>.
+
+Elaborating module <auto_check_4>.
+WARNING:HDLCompiler:1127 - "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 78: Assignment to rst ignored, since the identifier is never used
+WARNING:Xst:2972 - "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/mojo_top_0.v" line 38. All outputs of instance <reset_cond> of block <reset_conditioner_1> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <io_button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_dip<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_dip<23:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/mojo_top_0.v" line 38: Output port <out> of the instance <reset_cond> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 78
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 78
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 78
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 78
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 78
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 78
+    Summary:
+	inferred   4 Multiplexer(s).
+	inferred   6 Tristate(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <clock_2>.
+    Related source file is "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/Clock_2.v".
+    Found 26-bit register for signal <M_counter_q>.
+    Found 26-bit adder for signal <M_counter_d> created at line 23.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+Unit <clock_2> synthesized.
+
+Synthesizing Unit <adder_checker_3>.
+    Related source file is "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/adder_checker_3.v".
+    Found 2-bit register for signal <M_adder_q>.
+    Found 2-bit adder for signal <n0019> created at line 25.
+    Found 2-bit adder for signal <M_adder_d> created at line 25.
+    Found 1-bit comparator not equal for signal <n0002> created at line 26
+    Found 1-bit comparator not equal for signal <n0004> created at line 26
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <adder_checker_3> synthesized.
+
+Synthesizing Unit <auto_check_4>.
+    Related source file is "/home/tianlerk/mojo/50002MHP/work/planAhead/50002MHP/50002MHP.srcs/sources_1/imports/verilog/auto_check_4.v".
+    Found 3-bit register for signal <M_output_counter_q>.
+    Found 3-bit adder for signal <M_output_counter_d> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <auto_check_4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 2
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+# Registers                                            : 3
+ 2-bit register                                        : 1
+ 26-bit register                                       : 1
+ 3-bit register                                        : 1
+# Comparators                                          : 2
+ 1-bit comparator not equal                            : 2
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 1
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <auto_check_4>.
+The following registers are absorbed into counter <M_output_counter_q>: 1 register on signal <M_output_counter_q>.
+Unit <auto_check_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_2>.
+The following registers are absorbed into counter <M_counter_q>: 1 register on signal <M_counter_q>.
+Unit <clock_2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder carry in                                  : 1
+# Counters                                             : 2
+ 26-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 2
+ 1-bit comparator not equal                            : 2
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mojo_top_0> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mojo_top_0.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 92
+#      GND                         : 2
+#      INV                         : 3
+#      LUT1                        : 25
+#      LUT2                        : 2
+#      LUT3                        : 4
+#      LUT4                        : 1
+#      LUT6                        : 2
+#      MUXCY                       : 25
+#      VCC                         : 2
+#      XORCY                       : 26
+# FlipFlops/Latches                : 31
+#      FDR                         : 31
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 60
+#      IBUF                        : 7
+#      OBUF                        : 47
+#      OBUFT                       : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              31  out of  11440     0%  
+ Number of Slice LUTs:                   37  out of   5720     0%  
+    Number used as Logic:                37  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     38
+   Number with an unused Flip Flop:       7  out of     38    18%  
+   Number with an unused LUT:             1  out of     38     2%  
+   Number of fully used LUT-FF pairs:    30  out of     38    78%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          92
+ Number of bonded IOBs:                  61  out of    102    59%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+counter_clock/M_counter_q_25       | NONE(auto_check/M_output_counter_q_0)| 3     |
+clk                                | BUFGP                                | 28    |
+-----------------------------------+--------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.514ns (Maximum Frequency: 397.772MHz)
+   Minimum input arrival time before clock: 4.225ns
+   Maximum output required time after clock: 5.330ns
+   Maximum combinational path delay: 6.344ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'counter_clock/M_counter_q_25'
+  Clock period: 2.410ns (frequency: 414.938MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            auto_check/M_output_counter_q_0 (FF)
+  Destination:       auto_check/M_output_counter_q_0 (FF)
+  Source Clock:      counter_clock/M_counter_q_25 rising
+  Destination Clock: counter_clock/M_counter_q_25 rising
+
+  Data Path: auto_check/M_output_counter_q_0 to auto_check/M_output_counter_q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.525   0.875  M_output_counter_q_0 (M_output_counter_q_0)
+     INV:I->O              1   0.255   0.681  Mcount_M_output_counter_q_xor<0>11_INV_0 (Result<0>1)
+     FDR:D                     0.074          M_output_counter_q_0
+    ----------------------------------------
+    Total                      2.410ns (0.854ns logic, 1.556ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.514ns (frequency: 397.772MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               2.514ns (Levels of Logic = 27)
+  Source:            counter_clock/M_counter_q_0 (FF)
+  Destination:       counter_clock/M_counter_q_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_clock/M_counter_q_0 to counter_clock/M_counter_q_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.525   0.681  M_counter_q_0 (M_counter_q_0)
+     INV:I->O              1   0.255   0.000  Mcount_M_counter_q_lut<0>_INV_0 (Mcount_M_counter_q_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_M_counter_q_cy<0> (Mcount_M_counter_q_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<1> (Mcount_M_counter_q_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<2> (Mcount_M_counter_q_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<3> (Mcount_M_counter_q_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<4> (Mcount_M_counter_q_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<5> (Mcount_M_counter_q_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<6> (Mcount_M_counter_q_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<7> (Mcount_M_counter_q_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<8> (Mcount_M_counter_q_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<9> (Mcount_M_counter_q_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<10> (Mcount_M_counter_q_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<11> (Mcount_M_counter_q_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<12> (Mcount_M_counter_q_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<13> (Mcount_M_counter_q_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<14> (Mcount_M_counter_q_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<15> (Mcount_M_counter_q_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<16> (Mcount_M_counter_q_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<17> (Mcount_M_counter_q_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<18> (Mcount_M_counter_q_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<19> (Mcount_M_counter_q_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<20> (Mcount_M_counter_q_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<21> (Mcount_M_counter_q_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<22> (Mcount_M_counter_q_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_M_counter_q_cy<23> (Mcount_M_counter_q_cy<23>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_M_counter_q_cy<24> (Mcount_M_counter_q_cy<24>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_M_counter_q_xor<25> (Result<25>)
+     FDR:D                     0.074          M_counter_q_25
+    ----------------------------------------
+    Total                      2.514ns (1.833ns logic, 0.681ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'counter_clock/M_counter_q_25'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.225ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       auto_check/M_output_counter_q_0 (FF)
+  Destination Clock: counter_clock/M_counter_q_25 rising
+
+  Data Path: rst_n to auto_check/M_output_counter_q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             31   0.255   1.502  M_reset_cond_in1_INV_0 (M_reset_cond_in)
+     begin scope: 'auto_check:rst'
+     FDR:R                     0.459          M_output_counter_q_0
+    ----------------------------------------
+    Total                      4.225ns (2.042ns logic, 2.183ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 38 / 30
+-------------------------------------------------------------------------
+Offset:              4.225ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       counter_clock/M_counter_q_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to counter_clock/M_counter_q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             31   0.255   1.502  M_reset_cond_in1_INV_0 (M_reset_cond_in)
+     begin scope: 'counter_clock:rst'
+     FDR:R                     0.459          M_counter_q_0
+    ----------------------------------------
+    Total                      4.225ns (2.042ns logic, 2.183ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              5.330ns (Levels of Logic = 3)
+  Source:            adder_checker/M_adder_q_1 (FF)
+  Destination:       io_seg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: adder_checker/M_adder_q_1 to io_seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.525   0.958  M_adder_q_1 (M_adder_q_1)
+     end scope: 'adder_checker:M_adder_q_1'
+     LUT4:I0->O            1   0.254   0.681  io_seg<6>1 (io_seg_6_OBUF)
+     OBUF:I->O                 2.912          io_seg_6_OBUF (io_seg<6>)
+    ----------------------------------------
+    Total                      5.330ns (3.691ns logic, 1.639ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'counter_clock/M_counter_q_25'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.292ns (Levels of Logic = 3)
+  Source:            auto_check/M_output_counter_q_0 (FF)
+  Destination:       io_led<0> (PAD)
+  Source Clock:      counter_clock/M_counter_q_25 rising
+
+  Data Path: auto_check/M_output_counter_q_0 to io_led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.525   0.876  M_output_counter_q_0 (M_output_counter_q_0)
+     end scope: 'auto_check:a'
+     LUT3:I2->O            2   0.254   0.725  io_led<0>1 (io_led_0_OBUF)
+     OBUF:I->O                 2.912          io_led_0_OBUF (io_led<0>)
+    ----------------------------------------
+    Total                      5.292ns (3.691ns logic, 1.601ns route)
+                                       (69.7% logic, 30.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 15 / 8
+-------------------------------------------------------------------------
+Delay:               6.344ns (Levels of Logic = 3)
+  Source:            io_dip<8> (PAD)
+  Destination:       io_led<2> (PAD)
+
+  Data Path: io_dip<8> to io_led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   1.104  io_dip_8_IBUF (io_dip_8_IBUF)
+     LUT3:I0->O            3   0.235   0.765  io_led<1>1 (io_led_1_OBUF)
+     OBUF:I->O                 2.912          io_led_1_OBUF (io_led<1>)
+    ----------------------------------------
+    Total                      6.344ns (4.475ns logic, 1.869ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |    2.514|         |         |         |
+counter_clock/M_counter_q_25|    3.132|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock counter_clock/M_counter_q_25
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+counter_clock/M_counter_q_25|    2.410|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.50 secs
+ 
+--> 
+
+
+Total memory usage is 393776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
