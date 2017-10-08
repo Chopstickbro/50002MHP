@@ -4,7 +4,7 @@
   (keywordmap (keywordlevel 0))
 (status
  (written
-  (timeStamp 2017 10 06 23 30 20)
+  (timeStamp 2017 10 08 12 19 10)
   (program "PlanAhead" (version "14.7"))
   (comment "Built on 'Fri Sep 27 19:24:36 MDT 2013'")
   (comment "Built by 'xbuild'")
@@ -161,8 +161,8 @@
         (port M_adder_q_0 (direction OUTPUT))
         (port b (direction INPUT))
         (port io_dip_8_IBUF (direction INPUT))
-        (port M_output_counter_q_0 (direction INPUT))
         (port M_output_counter_q_2 (direction INPUT))
+        (port M_output_counter_q_0 (direction INPUT))
         (port io_dip_0_IBUF (direction INPUT))
         (port io_dip_2_IBUF (direction INPUT))
         (port M_output_counter_q_1 (direction INPUT))
@@ -229,15 +229,15 @@
           (portref io_dip_8_IBUF)
           )
          )
-         (net M_output_counter_q_0 (joined
+         (net M_output_counter_q_2 (joined
           (portref I2 (instanceref Madd_M_adder_d_Madd_cy_0_11))
           (portref I4 (instanceref Madd_M_adder_d_Madd_xor_0_11))
-          (portref M_output_counter_q_0)
+          (portref M_output_counter_q_2)
           )
          )
-         (net M_output_counter_q_2 (joined
+         (net M_output_counter_q_0 (joined
           (portref I3 (instanceref Madd_M_adder_d_Madd_cy_0_11))
-          (portref M_output_counter_q_2)
+          (portref M_output_counter_q_0)
           )
          )
          (net io_dip_0_IBUF (joined
@@ -274,9 +274,9 @@
        (interface 
         (port toggle (direction INPUT))
         (port rst (direction INPUT))
-        (port a (direction OUTPUT))
-        (port b (direction OUTPUT))
         (port c (direction OUTPUT))
+        (port b (direction OUTPUT))
+        (port a (direction OUTPUT))
        )
        (contents
          (instance M_output_counter_q_0 (viewref netlist (cellref FDR (libraryref hdi_primitives)))
@@ -329,9 +329,9 @@
          (net (rename M_output_counter_q_0_ "M_output_counter_q[0]") (joined
           (portref Q (instanceref M_output_counter_q_0))
           (portref I1 (instanceref Mcount_M_output_counter_q_xor_1_11))
-          (portref I1 (instanceref Mcount_M_output_counter_q_xor_2_11))
+          (portref I2 (instanceref Mcount_M_output_counter_q_xor_2_11))
           (portref I0 (instanceref Mcount_M_output_counter_q_xor_0_11_INV_0))
-          (portref a)
+          (portref c)
           )
          )
          (net (rename Result_1_1 "Result<1>1") (joined
@@ -342,7 +342,7 @@
          (net (rename M_output_counter_q_1_ "M_output_counter_q[1]") (joined
           (portref Q (instanceref M_output_counter_q_1))
           (portref I0 (instanceref Mcount_M_output_counter_q_xor_1_11))
-          (portref I2 (instanceref Mcount_M_output_counter_q_xor_2_11))
+          (portref I1 (instanceref Mcount_M_output_counter_q_xor_2_11))
           (portref b)
           )
          )
@@ -354,7 +354,7 @@
          (net (rename M_output_counter_q_2_ "M_output_counter_q[2]") (joined
           (portref Q (instanceref M_output_counter_q_2))
           (portref I0 (instanceref Mcount_M_output_counter_q_xor_2_11))
-          (portref c)
+          (portref a)
           )
          )
        )
@@ -1826,7 +1826,7 @@
          (net M_auto_check_a (joined
           (portref I2 (instanceref io_led_0_1))
           (portref a (instanceref auto_check))
-          (portref M_output_counter_q_0 (instanceref adder_checker))
+          (portref M_output_counter_q_2 (instanceref adder_checker))
           )
          )
          (net M_auto_check_b (joined
@@ -1838,7 +1838,7 @@
          (net M_auto_check_c (joined
           (portref I2 (instanceref io_led_2_1))
           (portref c (instanceref auto_check))
-          (portref M_output_counter_q_2 (instanceref adder_checker))
+          (portref M_output_counter_q_0 (instanceref adder_checker))
           )
          )
          (net io_seg_6_OBUF (joined

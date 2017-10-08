@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Fri Oct  6 23:30:37 2017">
+  <application stringID="par" timeStamp="Sun Oct  8 12:19:27 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -49,7 +49,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz"/>
-          <item stringID="speed" value="3299.829 MHz"/>
+          <item stringID="speed" value="3248.889 MHz"/>
         </row>
       </table>
     </section>
@@ -94,9 +94,9 @@
             <item label="Clock Net" stringID="CLOCK_NET" value="M_counter_clock_out"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="4.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.041000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.374000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="3.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.331000"/>
           </row>
         </table>
       </section>
@@ -1638,7 +1638,7 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Fri Oct  6 23:30:38 2017">
+  <application stringID="Par" timeStamp="Sun Oct  8 12:19:27 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -1682,7 +1682,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz"/>
-          <item stringID="speed" value="3188.745 MHz"/>
+          <item stringID="speed" value="3376.794 MHz"/>
         </row>
       </table>
     </section>
@@ -1717,10 +1717,10 @@
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="1"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="1430" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="11">
+        <item AVAILABLE="1430" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="10">
           <item AVAILABLE="355" dataType="int" stringID="PAR_NUM_SLICEL" value="7"/>
           <item AVAILABLE="360" dataType="int" stringID="PAR_NUM_SLICEM" value="0"/>
-          <item AVAILABLE="715" dataType="int" stringID="PAR_NUM_SLICEX" value="4"/>
+          <item AVAILABLE="715" dataType="int" stringID="PAR_NUM_SLICEX" value="3"/>
         </item>
         <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="33">
           <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="3"/>

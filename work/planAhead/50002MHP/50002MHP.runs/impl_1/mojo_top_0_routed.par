@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-TianLerk-XPS-15-9550::  Fri Oct 06 23:30:35 2017
+TianLerk-XPS-15-9550::  Sun Oct 08 12:19:25 2017
 
 par -intstyle pa -w -mt on mojo_top_0.ncd mojo_top_0_routed.ncd 
 
@@ -39,7 +39,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    11 out of   1,430    1%
+  Number of occupied Slices:                    10 out of   1,430    1%
   Number of MUXCYs used:                        28 out of   2,860    1%
   Number of LUT Flip Flop pairs used:           33
     Number with an unused Flip Flop:             3 out of      33    9%
@@ -122,13 +122,13 @@ WARNING:Par:288 - The signal io_dip(16)_IBUF has no load.  PAR will not attempt 
 Starting Multi-threaded Router
 
 
-Phase  1  : 157 unrouted;      REAL time: 2 secs 
+Phase  1  : 155 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 120 unrouted;      REAL time: 2 secs 
+Phase  2  : 118 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 22 unrouted;      REAL time: 2 secs 
+Phase  3  : 23 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 22 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  4  : 23 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
@@ -157,7 +157,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |           clk_BUFGP | BUFGMUX_X2Y11| No   |    8 |  0.010     |  1.400      |
 +---------------------+--------------+------+------+------------+-------------+
-| M_counter_clock_out |         Local|      |    4 |  0.041     |  1.374      |
+| M_counter_clock_out |         Local|      |    3 |  0.000     |  1.331      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing

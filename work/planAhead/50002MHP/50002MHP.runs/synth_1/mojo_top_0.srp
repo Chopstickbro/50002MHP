@@ -324,10 +324,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'counter_clock/M_counter_q_25'
-  Clock period: 2.410ns (frequency: 414.938MHz)
+  Clock period: 2.375ns (frequency: 421.053MHz)
   Total number of paths / destination ports: 6 / 3
 -------------------------------------------------------------------------
-Delay:               2.410ns (Levels of Logic = 1)
+Delay:               2.375ns (Levels of Logic = 1)
   Source:            auto_check/M_output_counter_q_0 (FF)
   Destination:       auto_check/M_output_counter_q_0 (FF)
   Source Clock:      counter_clock/M_counter_q_25 rising
@@ -337,12 +337,12 @@ Delay:               2.410ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.525   0.875  M_output_counter_q_0 (M_output_counter_q_0)
+     FDR:C->Q              5   0.525   0.840  M_output_counter_q_0 (M_output_counter_q_0)
      INV:I->O              1   0.255   0.681  Mcount_M_output_counter_q_xor<0>11_INV_0 (Result<0>1)
      FDR:D                     0.074          M_output_counter_q_0
     ----------------------------------------
-    Total                      2.410ns (0.854ns logic, 1.556ns route)
-                                       (35.4% logic, 64.6% route)
+    Total                      2.375ns (0.854ns logic, 1.521ns route)
+                                       (36.0% logic, 64.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
@@ -459,21 +459,21 @@ Offset:              5.330ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'counter_clock/M_counter_q_25'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              5.292ns (Levels of Logic = 3)
+Offset:              5.297ns (Levels of Logic = 3)
   Source:            auto_check/M_output_counter_q_0 (FF)
-  Destination:       io_led<0> (PAD)
+  Destination:       io_led<2> (PAD)
   Source Clock:      counter_clock/M_counter_q_25 rising
 
-  Data Path: auto_check/M_output_counter_q_0 to io_led<0>
+  Data Path: auto_check/M_output_counter_q_0 to io_led<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.525   0.876  M_output_counter_q_0 (M_output_counter_q_0)
-     end scope: 'auto_check:a'
-     LUT3:I2->O            2   0.254   0.725  io_led<0>1 (io_led_0_OBUF)
-     OBUF:I->O                 2.912          io_led_0_OBUF (io_led<0>)
+     FDR:C->Q              5   0.525   0.841  M_output_counter_q_0 (M_output_counter_q_0)
+     end scope: 'auto_check:c'
+     LUT3:I2->O            3   0.254   0.765  io_led<2>1 (io_led_2_OBUF)
+     OBUF:I->O                 2.912          io_led_2_OBUF (io_led<2>)
     ----------------------------------------
-    Total                      5.292ns (3.691ns logic, 1.601ns route)
+    Total                      5.297ns (3.691ns logic, 1.606ns route)
                                        (69.7% logic, 30.3% route)
 
 =========================================================================
@@ -514,14 +514,14 @@ Clock to Setup on destination clock counter_clock/M_counter_q_25
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-counter_clock/M_counter_q_25|    2.410|         |         |         |
+counter_clock/M_counter_q_25|    2.375|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.50 secs
+Total CPU time to Xst completion: 3.70 secs
  
 --> 
 

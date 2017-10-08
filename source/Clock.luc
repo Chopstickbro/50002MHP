@@ -1,5 +1,5 @@
 module clock (
-    //clock alternates output level every N seconds
+    //clock alternates output level every 2^(N-1)/50M seconds
     
     input clk,  // clock
     input rst,  // reset

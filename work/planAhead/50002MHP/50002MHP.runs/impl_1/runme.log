@@ -99,21 +99,21 @@ Phase 8.5  Local Placement Optimization (Checksum:3f002352) REAL time: 3 secs
 Phase 9.8  Global Placement
 ..
 ..
-Phase 9.8  Global Placement (Checksum:f4d4fbae) REAL time: 3 secs 
+Phase 9.8  Global Placement (Checksum:ff22493e) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:f4d4fbae) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:ff22493e) REAL time: 3 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:7d934d2e) REAL time: 4 secs 
+Phase 11.18  Placement Optimization (Checksum:384a942e) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:7d934d2e) REAL time: 4 secs 
+Phase 12.5  Local Placement Optimization (Checksum:384a942e) REAL time: 3 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:7d934d2e) REAL time: 4 secs 
+Phase 13.34  Placement Validation (Checksum:384a942e) REAL time: 3 secs 
 
-Total REAL time to Placer completion: 4 secs 
+Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 3 secs 
 Running post-placement packing...
 Writing output files...
@@ -140,7 +140,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    11 out of   1,430    1%
+  Number of occupied Slices:                    10 out of   1,430    1%
   Number of MUXCYs used:                        28 out of   2,860    1%
   Number of LUT Flip Flop pairs used:           33
     Number with an unused Flip Flop:             3 out of      33    9%
@@ -233,7 +233,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    11 out of   1,430    1%
+  Number of occupied Slices:                    10 out of   1,430    1%
   Number of MUXCYs used:                        28 out of   2,860    1%
   Number of LUT Flip Flop pairs used:           33
     Number with an unused Flip Flop:             3 out of      33    9%
@@ -316,13 +316,13 @@ WARNING:Par:288 - The signal io_dip(16)_IBUF has no load.  PAR will not attempt 
 Starting Multi-threaded Router
 
 
-Phase  1  : 157 unrouted;      REAL time: 2 secs 
+Phase  1  : 155 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 120 unrouted;      REAL time: 2 secs 
+Phase  2  : 118 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 22 unrouted;      REAL time: 2 secs 
+Phase  3  : 23 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 22 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  4  : 23 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
@@ -351,7 +351,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |           clk_BUFGP | BUFGMUX_X2Y11| No   |    8 |  0.010     |  1.400      |
 +---------------------+--------------+------+------+------------+-------------+
-| M_counter_clock_out |         Local|      |    4 |  0.041     |  1.374      |
+| M_counter_clock_out |         Local|      |    3 |  0.000     |  1.331      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -412,7 +412,7 @@ Loading device for application Rf_Device from file '6slx9.nph' in environment
 /opt/Xilinx/14.7/ISE_DS/ISE/.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 
-Analysis completed Fri Oct  6 23:30:42 2017
+Analysis completed Sun Oct  8 12:19:32 2017
 --------------------------------------------------------------------------------
 
 Generating Report ...

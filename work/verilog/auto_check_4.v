@@ -19,9 +19,9 @@ module auto_check_4 (
   always @* begin
     M_output_counter_d = M_output_counter_q;
     
-    a = M_output_counter_q[0+0-:1];
+    a = M_output_counter_q[2+0-:1];
     b = M_output_counter_q[1+0-:1];
-    c = M_output_counter_q[2+0-:1];
+    c = M_output_counter_q[0+0-:1];
     M_output_counter_d = M_output_counter_q + 1'h1;
   end
   

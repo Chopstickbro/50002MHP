@@ -9,6 +9,7 @@ module adder_checker (
     output out //output 1 if error, output 0 if correct
   ) {
   
+  //uses dff as adder circuit to compare external sum&carry with dff output for generated a, b, cin.
   dff adder[2](.clk(clk),.rst(rst));
 
   always {

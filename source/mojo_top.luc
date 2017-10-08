@@ -16,11 +16,11 @@ module mojo_top (
     output io_sel [4],      // Digit select on IO Shield
     input io_button [5],    // 5 buttons on IO Shield
     input io_dip [3][8],     // DIP switches on IO Shield
-    output a_out,
-    output b_out,
-    output c_out,
-    input sum,
-    input carry
+    output a_out, //output a for external circuit
+    output b_out, //output b for external circuit
+    output c_out, //output c for external circuit
+    input sum, //input sum from external circuit
+    input carry //input carry from extenral circuit
   ) {
   
   sig rst;                  // reset signal
@@ -41,7 +41,7 @@ module mojo_top (
   always {
     reset_cond.in = ~rst_n; // input raw inverted reset signal
     rst = reset_cond.out;   // conditioned reset
-    auto_check.toggle = counter_clock.out;
+    auto_check.toggle = counter_clock.out; //connect 0.74hz clock signal to toggle of auto_check
     adder_checker.sum = sum;
     adder_checker.carry = carry;
 

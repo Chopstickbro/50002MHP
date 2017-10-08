@@ -8,7 +8,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct  6 23:30:29 2017
+Mapped Date    : Sun Oct  8 12:19:20 2017
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal spi_channel[3] connected to top level port
@@ -61,21 +61,21 @@ Phase 8.5  Local Placement Optimization (Checksum:3f002352) REAL time: 3 secs
 Phase 9.8  Global Placement
 ..
 ..
-Phase 9.8  Global Placement (Checksum:f4d4fbae) REAL time: 3 secs 
+Phase 9.8  Global Placement (Checksum:ff22493e) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:f4d4fbae) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:ff22493e) REAL time: 3 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:7d934d2e) REAL time: 4 secs 
+Phase 11.18  Placement Optimization (Checksum:384a942e) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:7d934d2e) REAL time: 4 secs 
+Phase 12.5  Local Placement Optimization (Checksum:384a942e) REAL time: 3 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:7d934d2e) REAL time: 4 secs 
+Phase 13.34  Placement Validation (Checksum:384a942e) REAL time: 3 secs 
 
-Total REAL time to Placer completion: 4 secs 
+Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 3 secs 
 Running post-placement packing...
 Writing output files...
@@ -105,7 +105,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    11 out of   1,430    1%
+  Number of occupied Slices:                    10 out of   1,430    1%
   Number of MUXCYs used:                        28 out of   2,860    1%
   Number of LUT Flip Flop pairs used:           33
     Number with an unused Flip Flop:             3 out of      33    9%

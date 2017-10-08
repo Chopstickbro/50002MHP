@@ -1628,20 +1628,20 @@ Slack: 19.520ns (period - min period limit)
   Location pin: SLICE_X12Y25.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
-Slack: 19.525ns (period - min period limit)
+Slack: 19.530ns (period - min period limit)
   Period: 20.000ns
-  Min period limit: 0.475ns (2105.263MHz) (Tcp)
+  Min period limit: 0.470ns (2127.660MHz) (Tcp)
   Physical resource: M_adder_q_1/CLK
   Logical resource: adder_checker/M_adder_q_0/CK
-  Location pin: SLICE_X14Y37.CLK
+  Location pin: SLICE_X13Y37.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
-Slack: 19.525ns (period - min period limit)
+Slack: 19.530ns (period - min period limit)
   Period: 20.000ns
-  Min period limit: 0.475ns (2105.263MHz) (Tcp)
+  Min period limit: 0.470ns (2127.660MHz) (Tcp)
   Physical resource: M_adder_q_1/CLK
   Logical resource: adder_checker/M_adder_q_1/CK
-  Location pin: SLICE_X14Y37.CLK
+  Location pin: SLICE_X13Y37.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -1676,7 +1676,7 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Oct  6 23:30:42 2017 
+Analysis completed Sun Oct  8 12:19:32 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

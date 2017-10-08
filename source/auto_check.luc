@@ -6,12 +6,14 @@ module auto_check (
     output c
   ) {
 
+  //3 bit dff toggles at 'toggle' rate and produces all combinations
+  //of 1 bit adder input in truth table.
   dff output_counter[3](.clk(toggle),.rst(rst));
   
   always {
-    a = output_counter.q[0];
+    a = output_counter.q[2];
     b = output_counter.q[1];
-    c = output_counter.q[2];
+    c = output_counter.q[0];
     output_counter.d = output_counter.q + 1;
   }
 }

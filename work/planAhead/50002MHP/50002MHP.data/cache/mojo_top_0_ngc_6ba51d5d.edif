@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2017 10 6 23 30 18)
+      (timestamp 2017 10 8 12 19 8)
       (program "Xilinx ngc2edif" (version "P.20131013"))
       (author "Xilinx. Inc ")
       (comment "This EDIF netlist is to be used within supported synthesis tools")
@@ -299,10 +299,10 @@
             (port io_dip_8_IBUF
               (direction INPUT)
             )
-            (port M_output_counter_q_0
+            (port M_output_counter_q_2
               (direction INPUT)
             )
-            (port M_output_counter_q_2
+            (port M_output_counter_q_0
               (direction INPUT)
             )
             (port io_dip_0_IBUF
@@ -393,16 +393,16 @@
                 (portRef I0 (instanceRef Madd_M_adder_d_Madd_xor_0_11))
               )
             )
-            (net M_output_counter_q_0
+            (net M_output_counter_q_2
               (joined
-                (portRef M_output_counter_q_0)
+                (portRef M_output_counter_q_2)
                 (portRef I2 (instanceRef Madd_M_adder_d_Madd_cy_0_11))
                 (portRef I4 (instanceRef Madd_M_adder_d_Madd_xor_0_11))
               )
             )
-            (net M_output_counter_q_2
+            (net M_output_counter_q_0
               (joined
-                (portRef M_output_counter_q_2)
+                (portRef M_output_counter_q_0)
                 (portRef I3 (instanceRef Madd_M_adder_d_Madd_cy_0_11))
               )
             )
@@ -1708,13 +1708,13 @@
             (port rst
               (direction INPUT)
             )
-            (port a
+            (port c
               (direction OUTPUT)
             )
             (port b
               (direction OUTPUT)
             )
-            (port c
+            (port a
               (direction OUTPUT)
             )
           )
@@ -1774,10 +1774,10 @@
             )
             (net (rename M_output_counter_q_0__ "M_output_counter_q<0>")
               (joined
-                (portRef a)
+                (portRef c)
                 (portRef Q (instanceRef M_output_counter_q_0))
                 (portRef I1 (instanceRef Mcount_M_output_counter_q_xor_1_11))
-                (portRef I1 (instanceRef Mcount_M_output_counter_q_xor_2_11))
+                (portRef I2 (instanceRef Mcount_M_output_counter_q_xor_2_11))
                 (portRef I (instanceRef Mcount_M_output_counter_q_xor_0_11_INV_0))
               )
             )
@@ -1792,7 +1792,7 @@
                 (portRef b)
                 (portRef Q (instanceRef M_output_counter_q_1))
                 (portRef I0 (instanceRef Mcount_M_output_counter_q_xor_1_11))
-                (portRef I2 (instanceRef Mcount_M_output_counter_q_xor_2_11))
+                (portRef I1 (instanceRef Mcount_M_output_counter_q_xor_2_11))
               )
             )
             (net (rename Result_2_1 "Result<2>1")
@@ -1803,7 +1803,7 @@
             )
             (net (rename M_output_counter_q_2__ "M_output_counter_q<2>")
               (joined
-                (portRef c)
+                (portRef a)
                 (portRef Q (instanceRef M_output_counter_q_2))
                 (portRef I0 (instanceRef Mcount_M_output_counter_q_xor_2_11))
               )
@@ -2299,7 +2299,7 @@
               (joined
                 (portRef I2 (instanceRef io_led_0_1))
                 (portRef a (instanceRef auto_check))
-                (portRef M_output_counter_q_0 (instanceRef adder_checker))
+                (portRef M_output_counter_q_2 (instanceRef adder_checker))
               )
             )
             (net M_auto_check_b
@@ -2313,7 +2313,7 @@
               (joined
                 (portRef I2 (instanceRef io_led_2_1))
                 (portRef c (instanceRef auto_check))
-                (portRef M_output_counter_q_2 (instanceRef adder_checker))
+                (portRef M_output_counter_q_0 (instanceRef adder_checker))
               )
             )
             (net io_seg_6_OBUF
